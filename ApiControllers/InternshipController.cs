@@ -16,7 +16,16 @@ namespace InternshipFinder.ApiControllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetInternships(string location)
+        public async Task<IActionResult> GetInternships(
+            [FromQuery] string location = null,
+            [FromQuery] int? number = null,
+            [FromQuery] string category = null,
+            [FromQuery] string keyword = null,
+            [FromQuery] DateTime? applicationDeadlineBefore = null,
+            [FromQuery] bool? experienceRequired = null,
+            [FromQuery] DateTime? publishedDate = null,
+            [FromQuery] int? page = 1,
+            [FromQuery] int? pageSize = 20)
         {
             if (string.IsNullOrEmpty(location))
             {
@@ -25,7 +34,10 @@ namespace InternshipFinder.ApiControllers
 
             try
             {
-                var internships = await _internshipService.GetInternshipsAsync(location);
+                var internships = await _internshipService.GetInternshipsAsync(
+                    location, number, category, keyword, applicationDeadlineBefore, experienceRequired,
+                    publishedDate, page, pageSize);
+
                 return Ok(internships);
             }
             catch (Exception ex)

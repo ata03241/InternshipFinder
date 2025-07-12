@@ -34,3 +34,4 @@ C:\Users\pakhr\OneDrive\Desktop\InternshipFinder\obj\Debug\net9.0\ref\Internship
 C:\Users\pakhr\OneDrive\Desktop\InternshipFinder\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\pakhr\OneDrive\Desktop\InternshipFinder\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\pakhr\OneDrive\Desktop\InternshipFinder\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pakhr\OneDrive\Desktop\InternshipFinder\obj\Debug\net9.0\InternshipFinder.sourcelink.json
