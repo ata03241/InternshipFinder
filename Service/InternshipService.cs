@@ -31,7 +31,7 @@ public class InternshipService
         //rrequired q parameter
         queryParams.Append("q=praktik");
 
-        if(!string.IsNullOrEmpty(location))
+        if (!string.IsNullOrEmpty(location))
         {
             queryParams.Append($"&county={Uri.EscapeDataString(location)}");
         }
@@ -40,7 +40,7 @@ public class InternshipService
         {
             queryParams.Append($"&limit={number.Value}");
         }
-        
+
 
         if (!string.IsNullOrEmpty(category))
         {
@@ -72,14 +72,14 @@ public class InternshipService
             queryParams.Append($"&page={page.Value}");
         }
 
-        if (pageSize.HasValue && page > 1 && pageSize.HasValue)
+        if (page.HasValue && page > 1 && pageSize.HasValue)
         {
             int offset = (page.Value - 1) * pageSize.Value;
             queryParams.Append($"&offset={offset}");
         }
 
 
-         string url = $"https://jobsearch.api.jobtechdev.se/search?{queryParams}";
+        string url = $"https://jobsearch.api.jobtechdev.se/search?{queryParams}";
         var response = await _httpClient.GetAsync(url);
         response.EnsureSuccessStatusCode();
 
@@ -96,5 +96,7 @@ public class InternshipService
         return internshipResponse;
 
     }
+    
+    
 
 }

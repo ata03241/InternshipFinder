@@ -32,6 +32,21 @@ namespace InternshipFinder.ApiControllers
                 return BadRequest("Location parameter is required.");
             }
 
+            if (page <= 0)
+            {
+                return BadRequest("Page number must be greater than 0.");
+            }
+
+            if (pageSize <= 0 || pageSize > 100)
+            {
+                return BadRequest("Page size must be between 1 and 100.");
+            }
+
+            if (number.HasValue && (number < 1 || number > 100))
+            {
+                return BadRequest("Number must be between 1 and 100.");
+            }
+
             try
             {
                 var internships = await _internshipService.GetInternshipsAsync(
@@ -45,5 +60,7 @@ namespace InternshipFinder.ApiControllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error fetching internships: {ex.Message}");
             }
         }
+
+        
     }
 }
