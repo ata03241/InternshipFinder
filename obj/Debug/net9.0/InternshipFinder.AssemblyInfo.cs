@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternshipFinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b79abba93377e4b08a7387c42a2bd4ba4e0a680")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0588ebbfdf0cc725dd0ddf1b76cbf15a49b0bad5")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternshipFinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternshipFinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

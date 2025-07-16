@@ -1,0 +1,122 @@
+/* Container and Card Styling */
+.containerr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.card-margin {
+    margin-bottom: 30px;
+}
+
+.card.search-form {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(60,72,88,0.15);
+    background: #fff;
+    height: 80%;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+/* Form Styling */
+#search-form .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: -0.9%;
+}
+
+#search-form .form-control {
+    border-radius: 0;
+    border: 1px solid #e0e0e0;
+    height: 48px;
+    font-size: 16px;
+    box-shadow: none;
+    transition: border-color 0.2s;
+}
+
+#search-form .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+#search-form select.form-control {
+    border-radius: 5px;
+}
+
+#search-form input.form-control {
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+#search-form .btn-base {
+    width: 100%;
+    height: 48px;
+    color: black;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+#search-form .btn-base:hover {
+    background: #0056b3;
+}
+
+#search-form svg.feather-search {
+    vertical-align: middle;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    #search-form select.form-control,
+    #search-form input.form-control,
+    #search-form .btn-base {
+        border-radius: 8px !important;
+        margin-bottom: 10px;
+    }
+    #search-form .btn-base {
+        height: 48px;
+    }
+}
+
+.contain
+{
+    margin-top: -2%;
+    margin-left: -30%;
+}
+
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+.img-md {
+    width: 4rem;
+    height: 4rem;
+}
+.btn-link {
+    transition-property: color,background-color;
+    box-shadow: none;
+    border-radius: 0;
+    text-decoration: none!important;
+}
+
+@media (max-width: 991.98px) {
+    .contain {
+        margin-left: 0;
+        width: 100%;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .img-md {
+        width: 3rem;
+        height: 3rem;
+    }
+}
